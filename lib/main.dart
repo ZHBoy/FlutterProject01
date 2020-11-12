@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("图片组件的使用"),
+          title: Text("图片组件 本地 远程 圆角"),
         ),
         body: HomeContent(),
       ),
