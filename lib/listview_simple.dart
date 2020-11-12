@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /*
- * 顶部导航条，中间内容区域展示demo
+ * listview 列表组件简单使用
  */
 void main() {
   runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("列表组件"),
+          title: Text("列表组件简单使用"),
         ),
         body: HomeContent3(),
       ),
