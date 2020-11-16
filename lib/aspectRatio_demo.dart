@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /*
- * 顶部导航条，中间内容区域展示demo
+ * AspectRatio设置盒子的宽高比
  */
 void main() {
   runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("flutter title"),
+          title: Text("AspectRatio设置盒子的宽高比"),
         ),
         body: HomeContent(),
       ),
@@ -23,10 +23,15 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//内容区域
+//AspectRatio设置盒子的宽高比
 class HomeContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return null;
+    return AspectRatio(
+      aspectRatio: 2.0 / 1.0, //设置宽高比为2/1。具体指的是下面Container盒子
+      child: Container(
+        color: Colors.green,
+      ),
+    );
   }
 }
