@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 /*
- * 顶部导航条，中间内容区域展示demo
+ * Card卡片组件
  */
 void main() {
   runApp(MyApp());
