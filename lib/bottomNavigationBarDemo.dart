@@ -4,7 +4,7 @@ import 'bottompage/recommendPage.dart';
 import 'bottompage/personalPage.dart';
 
 /*
- * 顶部导航条，中间内容区域展示demo
+ * bottomNavigationBar使用
  */
 void main() {
   runApp(MyApp());
@@ -39,7 +39,7 @@ class _TabsState extends State<Tabs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("flutter title"),
+        title: Text("flutter bottomNavigationBar使用"),
       ),
       body: this._pageList[this._currentIndex],
       bottomNavigationBar: BottomNavigationBar(
