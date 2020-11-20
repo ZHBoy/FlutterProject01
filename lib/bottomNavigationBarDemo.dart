@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'tabs/tabs.dart';
+import 'routers/routers.dart';
 
 /*
- *q
+ *
  */
 void main() {
   runApp(MyApp());
@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Tabs(),
+      initialRoute: '/',
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }
