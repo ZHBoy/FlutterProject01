@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'routers/routers.dart';
 
 /*
- *
+ * 设置路由
  */
 void main() {
   runApp(MyApp());
