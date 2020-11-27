@@ -1,25 +1,13 @@
 import 'package:flutter/material.dart';
+import '../widgets/BaseThemeBar.dart';
 
 /*
  * CheckBox 和 CheckboxListTile
  */
-void main() {
-  runApp(MyApp());
-}
-
-//自定组件就是类
-class MyApp extends StatelessWidget {
+class CheckBoxAndCheckboxListTileDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("CheckBox 和 CheckboxListTile"),
-        ),
-        body: HomeContent(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.red),
-    );
+    return getBaseThemeBar('CheckBox 和 CheckboxListTile', HomeContent());
   }
 }
 

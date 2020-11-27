@@ -33,6 +33,7 @@ class _TabBarControllerPageState extends State<TabBarControllerPage>
           controller: this._tabController,
           tabs: [Text('男装'), Text('女装')],
         ),
+        backgroundColor: Colors.red,
       ),
       body: TabBarView(
         controller: this._tabController,

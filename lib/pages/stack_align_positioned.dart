@@ -1,25 +1,13 @@
 import 'package:flutter/material.dart';
+import '../widgets/BaseThemeBar.dart';
 
 /*
  * Stack与Align、positioned,实现层叠布局
  */
-void main() {
-  runApp(MyApp());
-}
-
-//自定组件就是类
-class MyApp extends StatelessWidget {
+class StackDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("Stack与Align、positioned,实现层叠布局"),
-        ),
-        body: HomeContent(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.red),
-    );
+    return getBaseThemeBar('Stack与Align、positioned,实现层叠布局', HomeContent());
   }
 }
 

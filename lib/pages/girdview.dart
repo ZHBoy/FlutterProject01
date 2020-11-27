@@ -1,26 +1,16 @@
 import 'package:flutter/material.dart';
-import 'listdata.dart';
+import '../data/listdata.dart';
+import '../widgets/BaseThemeBar.dart';
 
 /*
  * girdview组件使用
  */
-void main() {
-  runApp(MyApp());
-}
 
 //自定组件就是类
-class MyApp extends StatelessWidget {
+class GirdViewDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("flutter girdview组件"),
-        ),
-        body: HomeContent(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.red),
-    );
+    return getBaseThemeBar("girdview组件", HomeContent());
   }
 }
 

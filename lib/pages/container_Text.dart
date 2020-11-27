@@ -1,25 +1,15 @@
 import 'package:flutter/material.dart';
-
+import '../widgets/BaseThemeBar.dart';
 /*
  * container(类似与前端里的div)
  * text组件使用
  */
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+//自定组件就是类
+class ContainerTextDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('container组件 text组件'),
-        ),
-        body: HomeContent(),
-      ),
-    );
+    return getBaseThemeBar("Container Text组件使用", HomeContent());
   }
 }
 

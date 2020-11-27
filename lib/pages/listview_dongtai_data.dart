@@ -1,26 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:demo001/listdata.dart';
+import 'package:demo001/data/listdata.dart';
+import '../widgets/BaseThemeBar.dart';
 
 /*
- * 动态列表
+ * ListView动态列表
  */
-void main() {
-  runApp(MyApp());
-}
 
 //自定组件就是类
-class MyApp extends StatelessWidget {
+class ListViewFromDataDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("flutter 动态列表"),
-        ),
-        body: HomeContent2(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.red),
-    );
+    return getBaseThemeBar('ListView动态列表', HomeContent2());
   }
 }
 

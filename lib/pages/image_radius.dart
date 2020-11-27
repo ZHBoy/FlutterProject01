@@ -1,25 +1,18 @@
 import 'package:flutter/material.dart';
+import '../widgets/BaseThemeBar.dart';
 
 /*
  *图片组件使用 本地图片 远程图片 以及圆角圆形图片
  */
-void main() {
-  runApp(MyApp());
-}
-
 //自定组件就是类
-class MyApp extends StatelessWidget {
+class ImageRadiusDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("图片组件的使用"),
-        ),
-        body: HomeContent(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.red),
-    );
+    return getBaseThemeBar(
+        "图片组件的使用",
+        ListView(
+          children: [HomeContent(), HomeContent2(), HomeContent3()],
+        ));
   }
 }
 

@@ -1,25 +1,35 @@
 import 'package:flutter/material.dart';
+import '../widgets/BaseThemeBar.dart';
 
 /*
  * listview 列表组件简单使用
  */
-void main() {
-  runApp(MyApp());
-}
 
 //自定组件就是类
-class MyApp extends StatelessWidget {
+class ListViewSimpleDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("列表组件简单使用"),
-        ),
-        body: HomeContent3(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.red),
-    );
+    return getBaseThemeBar(
+        "列表组件简单使用",
+        ListView(
+          children: [
+            Text(
+              'Listview中使用ListTile',
+              style: TextStyle(fontSize: 26),
+            ),
+            HomeContent(),
+            Text(
+              'listview中使用其他的widgets',
+              style: TextStyle(fontSize: 26),
+            ),
+            HomeContent2(),
+            Text(
+              'listview水平列表',
+              style: TextStyle(fontSize: 26),
+            ),
+            HomeContent3()
+          ],
+        ));
   }
 }
 
@@ -28,6 +38,8 @@ class HomeContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      shrinkWrap: true,
+      physics: new NeverScrollableScrollPhysics(),
       children: [
         ListTile(
           leading: Icon(
@@ -85,6 +97,8 @@ class HomeContent2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
+      shrinkWrap: true,
+      physics: new NeverScrollableScrollPhysics(),
       padding: EdgeInsets.all(10.0),
       children: [
         Image.network(
@@ -109,6 +123,8 @@ class HomeContent3 extends StatelessWidget {
     return Container(
       height: 180.0,
       child: ListView(
+        shrinkWrap: true,
+        physics: new NeverScrollableScrollPhysics(),
         scrollDirection: Axis.horizontal,
         children: [
           Container(

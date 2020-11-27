@@ -1,30 +1,18 @@
 import 'package:flutter/material.dart';
+import '../widgets/BaseThemeBar.dart';
 
 /*
  * Card卡片组件
  */
-void main() {
-  runApp(MyApp());
-}
-
-//自定组件就是类
-class MyApp extends StatelessWidget {
+class CardDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("flutter title"),
-        ),
-        body: HomeContent2(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.red),
-    );
+    return getBaseThemeBar('Card卡片组件', HomeContent());
   }
 }
 
 //Card卡片组件
-class HomeContent2 extends StatelessWidget {
+class HomeContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(

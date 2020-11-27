@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../tabs/tabs.dart';
+import '../../tabs/tabs.dart';
 
 /*
  * 演示返回跟路由
@@ -9,7 +9,7 @@ class Navigator04 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Navigator04'),
+        title: Text('演示返回跟路由'),
       ),
       body: RaisedButton(
           child: Text('返回'),

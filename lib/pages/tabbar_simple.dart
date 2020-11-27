@@ -1,17 +1,14 @@
 import 'package:flutter/material.dart';
+import '../widgets/BaseThemeBar.dart';
 
 /*
  * 顶部导航条，中间内容区域展示demo
  */
-void main() {
-  runApp(MyApp());
-}
 
-//自定组件就是类
-class MyApp extends StatelessWidget {
+class TabbarSimpleDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomeContent());
+    return getBaseThemeBar('tabbar 顶部导航条 简单使用', HomeContent());
   }
 }
 

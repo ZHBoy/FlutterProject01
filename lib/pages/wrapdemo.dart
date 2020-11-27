@@ -1,25 +1,13 @@
 import 'package:flutter/material.dart';
+import '../widgets/BaseThemeBar.dart';
 
 /*
  * flutter 流式布局
  */
-void main() {
-  runApp(MyApp());
-}
-
-//自定组件就是类
-class MyApp extends StatelessWidget {
+class WarpDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("flutter 流式布局"),
-        ),
-        body: WrapContent(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.red),
-    );
+    return getBaseThemeBar('流式布局', WrapContent());
   }
 }
 

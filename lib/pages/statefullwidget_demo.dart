@@ -1,26 +1,15 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/BaseThemeBar.dart';
+
 /*
  * flutter statefullwidget 
  * setstate作用是改变数据，重新渲染
  */
-void main() {
-  runApp(MyApp());
-}
-
-//自定组件就是类
-class MyApp extends StatelessWidget {
+class StateFullWidgetDemoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("flutter title"),
-        ),
-        body: TextFullWidgetState2(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.red),
-    );
+    return getBaseThemeBar("statefullwidget有状态组件", TextFullWidgetState2());
   }
 }
 

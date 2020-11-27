@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '../bottompage/homePage.dart';
-import '../bottompage/recommendPage.dart';
-import '../bottompage/personalPage.dart';
+import '../pages/navigation/homePage.dart';
+import '../pages/navigation/recommendPage.dart';
+import '../pages/navigation/personalPage.dart';
 
 /*
  * 底部tab抽离
@@ -22,7 +22,7 @@ class _TabsState extends State<Tabs> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("flutter bottomNavigationBar使用"),
+        title: Text("flutter 各类组件使用示例"),
       ),
       body: this._pageList[this._currentIndex],
       bottomNavigationBar: BottomNavigationBar(

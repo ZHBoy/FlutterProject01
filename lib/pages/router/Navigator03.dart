@@ -8,7 +8,7 @@ class Navigator03 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Navigator03'),
+        title: Text('演示替换路由'),
       ),
     );
   }

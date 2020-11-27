@@ -1,25 +1,64 @@
 import 'package:flutter/material.dart';
+import '../widgets/BaseThemeBar.dart';
 
 /*
- * row column expanded组件使用
+ * Column Row Expanded组件使用
  */
-void main() {
-  runApp(MyApp());
+
+class ColumnRowExpandedDemoPage extends StatefulWidget {
+  @override
+  _ColumnRowExpandedDemoPageState createState() =>
+      _ColumnRowExpandedDemoPageState();
 }
 
-//自定组件就是类
-class MyApp extends StatelessWidget {
+class _ColumnRowExpandedDemoPageState extends State<ColumnRowExpandedDemoPage> {
+  Widget _widget = HomeContent();
+
+  Widget _getContentWidget() {
+    return _widget;
+  }
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text("row column expanded组件使用"),
-        ),
-        body: HomeContent3(),
-      ),
-      theme: ThemeData(primarySwatch: Colors.red),
-    );
+    return getBaseThemeBar(
+        'row column expanded组件使用',
+        Column(
+          children: [
+            Row(children: [
+              RaisedButton(
+                  child: Text('Column'),
+                  onPressed: () {
+                    setState(() {
+                      this._widget = HomeContent();
+                    });
+                  }),
+              SizedBox(
+                width: 10,
+              ),
+              RaisedButton(
+                  child: Text('Row组件'),
+                  onPressed: () {
+                    setState(() {
+                      this._widget = HomeContent2();
+                    });
+                  }),
+              SizedBox(
+                width: 10,
+              ),
+              RaisedButton(
+                  child: Text('Expanded'),
+                  onPressed: () {
+                    setState(() {
+                      this._widget = HomeContent3();
+                    });
+                  }),
+            ]),
+            SizedBox(
+              height: 10,
+            ),
+            Expanded(child: _getContentWidget())
+          ],
+        ));
   }
 }
 
