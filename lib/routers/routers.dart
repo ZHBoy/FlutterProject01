@@ -22,6 +22,7 @@ import '../pages/tabbar_custom_full.dart';
 import '../pages/buttonDemo.dart';
 import '../pages/checkbox_checkboxlisttile.dart';
 import '../pages/TextFieldDemo.dart';
+import '../pages/RadioDemo.dart';
 
 /*
  * 路由配置类
@@ -79,6 +80,9 @@ final routes = {
       CheckBoxAndCheckboxListTileDemoPage(),
   // 输入框TextField使用
   'TextFieldDemoPage': (context, {arguments}) => TextFieldDemoPage(),
+
+  //单选框使用 Radio RadioListTile Switch
+  'RadioDemoPage': (context, {arguments}) => RadioDemoPage(),
 };
 
 //固定写法

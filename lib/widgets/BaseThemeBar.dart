@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 
 Widget getBaseThemeBar(String title, Widget body) {
-  return MaterialApp(
-    home: Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-      body: body,
+  return Scaffold(
+    appBar: AppBar(
+      title: Text(title),
     ),
-    theme: ThemeData(primarySwatch: Colors.red),
+    body: body,
   );
 }
