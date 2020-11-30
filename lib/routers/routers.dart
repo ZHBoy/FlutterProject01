@@ -24,6 +24,7 @@ import '../pages/checkbox_checkboxlisttile.dart';
 import '../pages/TextFieldDemo.dart';
 import '../pages/RadioDemo.dart';
 import '../pages/ThreeLibForDateFormat.dart';
+import '../pages/DialogDemoPage.dart';
 
 /*
  * 路由配置类
@@ -87,6 +88,9 @@ final routes = {
 
   //第三方库dateformat库使用
   'DateFormatDemoPage': (context, {arguments}) => DateFormatDemoPage(),
+
+  //dialog弹框示例
+  'DialogPage': (context, {arguments}) => DialogPage(),
 };
 
 //固定写法
