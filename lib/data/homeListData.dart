@@ -26,7 +26,7 @@ List homeListData = [
   },
   {"name": "输入框TextField使用", "navigation": "TextFieldDemoPage"},
   {"name": "单选框使用 Radio RadioListTile Switch", "navigation": "RadioDemoPage"},
-  {"name": "", "navigation": ""},
+  {"name": "第三方DateFormat库使用", "navigation": "DateFormatDemoPage"},
   {"name": "", "navigation": ""},
   {"name": "", "navigation": ""},
 ];

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import '../widgets/BaseThemeBar.dart';
 
+/*
+ * 单选框使用 Radio RadioListTile Switch
+ */
 class RadioDemoPage extends StatefulWidget {
   @override
   _RadioDemoPageState createState() => _RadioDemoPageState();

@@ -23,6 +23,7 @@ import '../pages/buttonDemo.dart';
 import '../pages/checkbox_checkboxlisttile.dart';
 import '../pages/TextFieldDemo.dart';
 import '../pages/RadioDemo.dart';
+import '../pages/ThreeLibForDateFormat.dart';
 
 /*
  * 路由配置类
@@ -83,6 +84,9 @@ final routes = {
 
   //单选框使用 Radio RadioListTile Switch
   'RadioDemoPage': (context, {arguments}) => RadioDemoPage(),
+
+  //第三方库dateformat库使用
+  'DateFormatDemoPage': (context, {arguments}) => DateFormatDemoPage(),
 };
 
 //固定写法
