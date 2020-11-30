@@ -36,7 +36,7 @@ class _NetDioSimpleDemoPageState extends State<NetDioSimpleDemoPage> {
     },
             //错误回调
             (error) {
-      print("网络异常，请稍后重试");
+      _showToast("请换成自己的接口地址测试");
     });
   }
 
@@ -65,7 +65,7 @@ class _NetDioSimpleDemoPageState extends State<NetDioSimpleDemoPage> {
     },
         //错误回调
         (error) {
-      print("网络异常，请稍后重试");
+      _showToast("请换成自己的接口地址测试");
     });
   }
 
