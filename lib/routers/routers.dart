@@ -25,6 +25,7 @@ import '../pages/TextFieldDemo.dart';
 import '../pages/RadioDemo.dart';
 import '../pages/ThreeLibForDateFormat.dart';
 import '../pages/DialogDemoPage.dart';
+import '../pages/NetDioSimpleDemoPage.dart';
 
 /*
  * 路由配置类
@@ -91,6 +92,9 @@ final routes = {
 
   //dialog弹框示例
   'DialogPage': (context, {arguments}) => DialogPage(),
+
+  //网络层dio的使用
+  'NetDioSimpleDemoPage': (context, {arguments}) => NetDioSimpleDemoPage(),
 };
 
 //固定写法

@@ -32,6 +32,12 @@ dependencies:
   date_format: ^1.0.9
   #flutter中的提示
   fluttertoast: ^7.1.5
+  #网络库-dio
+  dio: 3.0.10
+  #网络库-cookie
+  cookie_jar: ^1.0.0
+  #网络库-cookieManager
+  dio_cookie_manager: 1.0.0
 
 dev_dependencies:
   flutter_test:
